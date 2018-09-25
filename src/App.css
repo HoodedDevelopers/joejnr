@@ -1,9 +1,14 @@
+body, html, #root {
+  height: 100%;
+}
+
 .App {
-  position: absolute;
+  /* position: absolute; */
   display: grid;
   grid-template: "one"
                  "two"
                  "three";
+  grid-auto-columns: 1fr;
   width: 100%;
   height: 100%;
   background-color: #eb2929;
@@ -22,8 +27,14 @@
   align-items: center;
   justify-content: center;
   height: 50vh;
-  font-size: 62px;
+  font-size: 52px;
   font-weight: bold;
+}
+
+.content-chicken {
+  position: absolute;
+  top: 150px;
+  left: 15%;
 }
 
 .content-text {
@@ -32,10 +43,16 @@
 
 .logo {
   grid-area: two;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu {
   grid-area: three;
+
 }
 
 .menu-items {
@@ -57,6 +74,7 @@
   margin-top: 50px;
   font-size: 20px;
   font-weight: thin;
+  color: rgb(250, 148, 148);
 }
 
 .social {
