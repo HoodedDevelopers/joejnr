@@ -22,14 +22,14 @@ body, html, #root {
 
 .content {
   grid-area: one;
-  margin: 40px 0;
+  margin: 20px 0 40px;
   font-size: 52px;
   font-weight: bold;
 }
 
 .content-chicken {
   position: absolute;
-  top: 40px;
+  top: 20px;
   /* left: 15%; */
   margin: 0 18%;
 }
