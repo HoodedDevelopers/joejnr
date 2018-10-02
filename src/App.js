@@ -8,10 +8,10 @@ class App extends Component {
     return (
       <div className="App">
         <div className="griditem item-1 content">
-          <div className="content-chicken">
-            <img src={chicken} className="chicken-img" alt=""/>
-          </div>
           <div className="content-text">
+            <div className="content-chicken">
+              <img src={chicken} className="chicken-img" alt=""/>
+            </div>
             Have a speil here about the store and waht it stands for and what it does in an emotional and engaging manner
           </div>
         </div>
