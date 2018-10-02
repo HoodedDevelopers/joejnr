@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './assets/logo-white.svg';
+import chicken from './assets/chicken-white.svg';
 import './App.css';
 
 class App extends Component {
@@ -7,12 +8,16 @@ class App extends Component {
     return (
       <div className="App">
         <div className="griditem item-1 content">
-          <div className="content-chicken">chicken</div>
           <div className="content-text">
+            <div className="content-chicken">
+              <img src={chicken} className="chicken-img" alt=""/>
+            </div>
             Have a speil here about the store and waht it stands for and what it does in an emotional and engaging manner
           </div>
         </div>
-        <div className="griditem item-2 logo">LOGO</div>
+        <div className="griditem item-2 logo">
+          <img src={logo} className="logo-img"/>
+        </div>
         <div className="griditem item-3 menu">
           <div className="menu-items">
             <div className="menu-item">BURGERS,</div>
