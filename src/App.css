@@ -5,6 +5,10 @@ body, html, #root {
   background-color: #eb2929;
 }
 
+a {
+  color: #fff;
+}
+
 .App {
   /* position: absolute; */
   display: grid;
@@ -31,8 +35,8 @@ body, html, #root {
 
 .content-chicken {
   position: relative;
-  top: 20px;
-  left: 32px;
+  top: 19px;
+  left: 1px;
   width: 75px;
 }
 
@@ -105,6 +109,24 @@ body, html, #root {
   margin-right: 15px;
 }
 
+.button {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.button a img {
+  position: absolute;
+  width: 200px;
+}
+
+.button a {
+  width: 200px;
+  height: 200px;
+}
+
 @media only screen and (min-width: 768px) {
   .App {
     position: relative;
@@ -122,12 +144,12 @@ body, html, #root {
 
   .content-chicken {
     top: 28px;
-    left: 0;
-    width: 75px;
+    left: 7px;
+    width: 100px;
   }
 
   .chicken-img {
-    width: 130px;
+    width: 100px;
   }
 
   .content-text {
@@ -176,11 +198,45 @@ body, html, #root {
   .facebook {
     margin-right: 15px;
   }
+
+  .button {
+    display: inline-block;
+    position: absolute;
+    right: 40px;
+    bottom: -20px;
+    width: 250px;
+    height: 250px;
+  }
+
+  .button a img {
+    width: 250px;
+  }
+
+  .button a {
+    width: 250px;
+    height: 250px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
   .App {
     max-width: 1200px;
     max-height: 822px;
+  }
+
+  .button {
+    right: 10px;
+    bottom: -85px;
+    width: 350px;
+    height: 350px;
+  }
+
+  .button a img {
+    width: 350px;
+  }
+
+  .button a {
+    width: 350px;
+    height: 350px;
   }
 }

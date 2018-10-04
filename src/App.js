@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './assets/logo-white.svg';
 import chicken from './assets/chicken-white.svg';
+import menu from './assets/menu-btn.png';
 import './App.css';
 
 class App extends Component {
@@ -12,7 +13,7 @@ class App extends Component {
             <div className="content-chicken">
               <img src={chicken} className="chicken-img" alt=""/>
             </div>
-            Have a speil here about the store and waht it stands for and what it does in an emotional and engaging manner
+            Three Generations of chicken lovers means we're pretty good at what we do but we'll let our food do the talking (and the walking).
           </div>
         </div>
         <div className="griditem item-2 logo">
@@ -28,18 +29,18 @@ class App extends Component {
           </div>
           <div className="footer">
             <div className="address">
-              <div className="address-line">Address 22 Hope street</div>
-              <div className="address-line">Happytown 2222</div>
+              <div className="address-line">Shop G01/580 580 Princess Highway</div>
+              <div className="address-line">Kirrawee, 2232</div>
               <div className="address-line">Tel: 02 9875 5432</div>
-              <div className="address-line">Email: hello@joejnr.com.au</div>
+              <div className="address-line">Email: info@joejnr.com.au</div>
             </div>
             <div className="social">
-              <div className="facebook"><i class="fab fa-facebook-square"></i></div>
-              <div className="ig"><i class="fab fa-instagram"></i></div>
+              <div className="facebook"><a href="https://www.facebook.com/Joe-Junior-341571203072595/" target="_blank"><i class="fab fa-facebook-square"></i></a></div>
+              <div className="ig"><a href="https://www.instagram.com/joejuniorchicken/" target="_blank"><i class="fab fa-instagram"></i></a></div>
             </div>
           </div>
           <div className="button">
-            <img src="" alt=""/>
+            <a href="http://" target="_blank" rel="noopener noreferrer"><img src={menu} alt=""/></a>
           </div>
         </div>
       </div>
