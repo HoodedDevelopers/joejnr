@@ -1,3 +1,98 @@
 .App {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 
+.page-grid {
+  display: grid;
+  /* width: 100%; */
+  height: 100%;
+}
+
+/* Main content */
+.main {
+  grid-area: main;
+  background: green;
+}
+
+.content-bold {
+  color: Grey;
+}
+
+.content-light {
+  color: lightgray;
+}
+
+.footer {
+  color: lightgray;
+}
+
+/* Aside images */
+.aside {
+  grid-area: aside;
+  background: blue;
+}
+
+/* Mobile */
+@media only screen and (min-width: 325px) {
+  .page-grid {
+    margin-right: 50px;
+    margin-left: 50px;
+    grid-template-areas:
+    "main"
+    "aside";
+    grid-auto-columns: 1fr;
+  }
+
+  .main {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 52px;
+  }
+
+  .content {
+    margin-bottom: 25px;
+  }
+
+  .footer {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .page-grid {
+    margin-right: 50px;
+    margin-left: 50px;
+    grid-template-areas:
+    "main main aside"
+    "main main aside";
+    grid-auto-columns: 1fr;
+  }
+
+  .main {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 992px) {
+  .page-grid {
+    margin-right: 100px;
+    margin-left: 100px;
+    grid-template-areas:
+    "main main main aside"
+    "main main main aside";
+    grid-auto-columns: 1fr;
+    max-width: 1200px;
+  }
+
+  .main {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
 }
