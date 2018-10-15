@@ -1,104 +1,174 @@
-$bg: red;
+$bg: #fff;
+$font-primary: Grey;
+$font-secondary: lightgray;
 
 .App {
-    position: relative;
-    width: 100%;
-    height: 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.page-grid {
+  display: grid;
+  margin: 0 auto;
+  /* width: 100%; */
+  height: 100%;
+}
+
+/* Main content */
+.main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 28px;
+  background: $bg;
+}
+
+.content-bold {
+  color: $font-primary;
+}
+
+.content-light {
+  color: $font-secondary;
+}
+
+.footer {
+  color: $font-secondary;
+
+  .logo {
+    width: 150px;
+    min-width: 100px;
+    margin: 0 auto;
   }
 
+  .menu-btn {
+    width: 150px;
+    margin: 0 auto;
+
+    img {
+      width: 150px;
+    }
+  }
+}
+
+
+/* Aside images */
+.aside {
+  grid-area: aside;
+  background: blue;
+}
+
+/* Mobile */
+@media only screen and (min-width: 325px) {
   .page-grid {
-    display: grid;
-    /* width: 100%; */
-    height: 100%;
+    margin-right: 50px;
+    margin-left: 50px;
+    grid-template-areas:
+    "main"
+    "aside";
+    grid-auto-columns: 1fr;
   }
 
-  /* Main content */
   .main {
-    grid-area: main;
-    background: $bg;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 
-  .content-bold {
-    color: Grey;
-  }
-
-  .content-light {
-    color: lightgray;
+  .content {
+    margin-bottom: 25px;
   }
 
   .footer {
-    color: lightgray;
+    margin-top: 25px;
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .page-grid {
+    margin-right: 50px;
+    margin-left: 50px;
+    // margin: 0 auto;
+    grid-template-areas:
+    "main main aside"
+    "main main aside";
+    grid-auto-columns: 1fr;
   }
 
-  /* Aside images */
-  .aside {
-    grid-area: aside;
-    background: blue;
+  .main {
+    // margin-top: 50px;
+    // margin-bottom: 50px;
+    font-size: 32px;
   }
 
-  /* Mobile */
-  @media only screen and (min-width: 325px) {
-    .page-grid {
-      margin-right: 50px;
-      margin-left: 50px;
-      grid-template-areas:
-      "main"
-      "aside";
-      grid-auto-columns: 1fr;
+  .content {
+    margin-right: 50px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    padding-right: 55px;
+    font-size: 14px;
+
+    .footer-text {
+      display: flex;
+      text-align: left;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+
+      .fc-one,
+      .fc-two,
+      .fc-three {
+        margin: 0 25px;
+      }
     }
 
-    .main {
-      margin-top: 50px;
-      margin-bottom: 50px;
-      font-size: 52px;
+    .logo {
+      margin: 0;
     }
 
-    .content {
-      margin-bottom: 25px;
+    .menu-btn {
+      position: absolute;
+      margin: 0;
+      right: -80px;
     }
+  }
+}
 
-    .footer {
-      margin-top: 25px;
-      text-align: center;
-      font-size: 18px;
+/* Desktop */
+@media only screen and (min-width: 992px) {
+  .page-grid {
+    margin: 0 auto;
+    padding: 0 50px;
+    max-width: 1200px;
+  }
+
+  .main {
+    font-size: 42px;
+  }
+
+  .content {
+    margin-right: 150px;
+  }
+
+  .footer {
+    .footer-text {
+      flex-wrap: nowrap;
     }
   }
 
-  /* Tablet */
-  @media only screen and (min-width: 768px) {
-    .page-grid {
-      margin-right: 50px;
-      margin-left: 50px;
-      grid-template-areas:
-      "main main aside"
-      "main main aside";
-      grid-auto-columns: 1fr;
-    }
-
-    .main {
-      margin-top: 50px;
-      margin-bottom: 50px;
-    }
+  .main {
+    // margin-top: 100px;
+    // margin-bottom: 100px;
   }
-
-  /* Desktop */
-  @media only screen and (min-width: 992px) {
-    .page-grid {
-      margin-right: 100px;
-      margin-left: 100px;
-      grid-template-areas:
-      "main main main aside"
-      "main main main aside";
-      grid-auto-columns: 1fr;
-      max-width: 1200px;
-    }
-
-    .main {
-      margin-top: 100px;
-      margin-bottom: 100px;
-    }
-  }
-
-  .test{
-      color: blue;
-  }
+}

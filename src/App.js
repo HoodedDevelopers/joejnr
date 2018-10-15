@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import Logo from './assets/logo.svg';
+import Menu from './assets/menu.png';
 
 class App extends Component {
   render() {
@@ -16,19 +18,23 @@ class App extends Component {
               </div>
             </div>
             <div className="footer">
-              <div className="logo">LOGO</div>
+              <div className="logo">
+                <img src={Logo} alt=""/>
+              </div>
               <div className="footer-text">
                 <div className="fc-one">
                   <div className="adress-one">22 Hope Street</div>
                   <div className="address-two">Happytown 2222</div>
                 </div>
                 <div className="fc-two">
-                  <div className="email">email</div>
-                  <div className="phone">phone</div>
+                  <div className="phone">Tel: 02 9876 5432</div>
+                  <div className="email">email: hello@joejnr.com.au</div>
                 </div>
                 <div className="fc-two">facebook instagram</div>
               </div>
-              <div className="menu-btn"></div>
+              <div className="menu-btn">
+                <img src={Menu} alt=""/>
+              </div>
             </div>
           </div>
           <div className="aside">
