@@ -1,0 +1,11 @@
+.test {
+  color: aquamarine; }
+
+.one {
+  background: red; }
+  .one .two {
+    background: #fff; }
+  .one .three {
+    color: blue; }
+    .one .three .three-inside {
+      color: green; }
