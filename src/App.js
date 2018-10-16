@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import Logo from './assets/logo.svg';
 import Menu from './assets/menu.png';
+import Meal from './assets/box.jpeg';
+import Burger from './assets/burger.jpeg';
 
 class App extends Component {
   render() {
@@ -28,9 +30,12 @@ class App extends Component {
                 </div>
                 <div className="fc-two">
                   <div className="phone">Tel: 02 9876 5432</div>
-                  <div className="email">email: hello@joejnr.com.au</div>
+                  <div className="email">Email: hello@joejnr.com.au</div>
                 </div>
-                <div className="fc-two">facebook instagram</div>
+                <div className="fc-three">
+                  <a href="https://www.facebook.com/Joe-Junior-341571203072595/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-square"></i></a>
+                  <a href="https://www.instagram.com/joejuniorchicken/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                </div>
               </div>
               <div className="menu-btn">
                 <img src={Menu} alt=""/>
@@ -38,14 +43,8 @@ class App extends Component {
             </div>
           </div>
           <div className="aside">
-            <div className="img-con ic-one">
-              <div className="img"></div>
-              img one
-            </div>
-            <div className="img-con ic-two">
-              <div className="img"></div>
-              img two
-            </div>
+            <div className="img-con ic-one"></div>
+            <div className="img-con ic-two"></div>
           </div>
         </div>
       </div>
