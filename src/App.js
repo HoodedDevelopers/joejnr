@@ -1,40 +1,50 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Logo from './assets/logo.svg';
+import Menu from './assets/menu.png';
+import Meal from './assets/box.jpeg';
+import Burger from './assets/burger.jpeg';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="griditem item-1 content">
-          <div className="content-chicken">chicken</div>
-          <div className="content-text">
-            Have a speil here about the store and waht it stands for and what it does in an emotional and engaging manner
-          </div>
-        </div>
-        <div className="griditem item-2 logo">LOGO</div>
-        <div className="griditem item-3 menu">
-          <div className="menu-items">
-            <div className="menu-item">BURGERS,</div>
-            <div className="menu-item">FRIED CHICKEN,</div>
-            <div className="menu-item">LOADED FRIES,</div>
-            <div className="menu-item">MILKSHAKES,</div>
-            <div className="menu-item ml">SALADS</div>
-          </div>
-          <div className="footer">
-            <div className="address">
-              <div className="address-line">Address 22 Hope street</div>
-              <div className="address-line">Happytown 2222</div>
-              <div className="address-line">Tel: 02 9875 5432</div>
-              <div className="address-line">Email: hello@joejnr.com.au</div>
+        <div className="page-grid">
+          <div className="main">
+            <div className="content">
+              <div className="content-bold">
+                Three Generations of chicken lovers means we're pretty good at what we do but we'll let our food do the talking (and the walking).
+              </div>
+              <div className="content-light">
+                Burgers, Southern Style Fried Chicken, Loaded Fries, Milkshakes, Salads...
+              </div>
             </div>
-            <div className="social">
-              <div className="facebook"><i class="fab fa-facebook-square"></i></div>
-              <div className="ig"><i class="fab fa-instagram"></i></div>
+            <div className="footer">
+              <div className="logo">
+                <img src={Logo} alt=""/>
+              </div>
+              <div className="footer-text">
+                <div className="fc-one">
+                  <div className="adress-one">22 Hope Street</div>
+                  <div className="address-two">Happytown 2222</div>
+                </div>
+                <div className="fc-two">
+                  <div className="phone">Tel: 02 9876 5432</div>
+                  <div className="email">Email: hello@joejnr.com.au</div>
+                </div>
+                <div className="fc-three">
+                  <a href="https://www.facebook.com/Joe-Junior-341571203072595/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-square"></i></a>
+                  <a href="https://www.instagram.com/joejuniorchicken/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+              <div className="menu-btn">
+                <img src={Menu} alt=""/>
+              </div>
             </div>
           </div>
-          <div className="button">
-            <img src="" alt=""/>
+          <div className="aside">
+            <div className="img-con ic-one"></div>
+            <div className="img-con ic-two"></div>
           </div>
         </div>
       </div>
