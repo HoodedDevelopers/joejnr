@@ -21,7 +21,7 @@ class App extends Component {
               </div>
             </div>
             <div className="footer">
-              <div className="logo">
+              <div className="logo">s
                 <img src={Logo} alt=""/>
               </div>
               <div className="footer-text">
@@ -31,7 +31,7 @@ class App extends Component {
                 </div>
                 <div className="fc-two">
                   <div className="phone">Tel: 0403 241 000</div>
-                  <div className="email">Email: hello@joejnr.com.au</div>
+                  <div className="email">Email: info@joejnr.com.au</div>
                 </div>
                 <div className="fc-three">
                   <a href="https://www.facebook.com/Joe-Junior-341571203072595/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-square"></i></a>
