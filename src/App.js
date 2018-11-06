@@ -26,8 +26,8 @@ class App extends Component {
               </div>
               <div className="footer-text">
                 <div className="fc-one">
-                  <div className="adress-one">Shop GO1/580 580 Princess Highway</div>
-                  <div className="address-two">Kirawee 2232</div>
+                  <div className="adress-one">Shop GO1/580 580 Princes Highway</div>
+                  <div className="address-two">Kirrawee 2232</div>
                 </div>
                 <div className="fc-two">
                   <div className="phone">Tel: 0403 241 000</div>
