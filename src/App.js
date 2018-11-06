@@ -21,7 +21,7 @@ class App extends Component {
               </div>
             </div>
             <div className="footer">
-              <div className="logo">s
+              <div className="logo">
                 <img src={Logo} alt=""/>
               </div>
               <div className="footer-text">
