@@ -30,7 +30,7 @@ class App extends Component {
                   <div className="address-two">Kirrawee 2232</div>
                 </div>
                 <div className="fc-two">
-                  <div className="phone">Tel: 0403 241 000</div>
+                  <div className="phone">Tel: 95 424 442</div>
                   <div className="email">Email: info@joejnr.com.au</div>
                 </div>
                 <div className="fc-three">
