@@ -109,6 +109,19 @@ $joejnr-red: #ee3124;
   }
 }
 
+.order {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: flex-start;
+
+  span{
+    font-size: 26px;
+    color: $joejnr-red;
+  }
+} 
+
 .order-btn {
   margin: 20px;
   margin-left: 0;
@@ -161,6 +174,15 @@ a {
     margin-bottom: 25px;
   }
 
+  .order {
+    align-items: center;
+    
+    span{
+      padding-bottom: 10px;
+      font-size: 23px;
+    }
+  } 
+
   .order-btn {
     margin: auto;
     font-size: 20px;
@@ -194,6 +216,14 @@ a {
   .content {
     margin-right: 50px;
   }
+
+  .order {
+    align-items: flex-start;
+    
+    span{
+      padding-bottom: 0;
+    }
+  } 
 
   .order-btn {
     margin: 20px;
