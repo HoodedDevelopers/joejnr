@@ -20,6 +20,12 @@ class App extends Component {
                 Burgers, Southern Style Fried Chicken, Salads...
               </div>
             </div>
+            <div className="order">
+              <span className="order-txt">You can now order Joe Junior online!</span>
+              <a className="order-btn" href="https://joejunior.yqme.com.au/" target="_blank">
+                Order Now
+              </a>
+            </div>
             <div className="footer">
               <div className="logo">
                 <img src={Logo} alt=""/>

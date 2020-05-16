@@ -78,8 +78,35 @@
     margin-top: 5px;
     background-image: url("./assets/burger.jpeg"); }
 
-a:link, a:visited, a:focus, a:hover, a:active {
-  color: #a7a7a7; }
+.order {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: flex-start; }
+  .order span {
+    font-size: 26px;
+    color: #ee3124; }
+
+.order-btn {
+  margin: 20px;
+  margin-left: 0;
+  padding: 15px;
+  border: 2px solid #3c3c3c;
+  text-align: center;
+  width: 150px; }
+  .order-btn:link, .order-btn:focus, .order-btn:hover, .order-btn:active {
+    color: #ee3124;
+    border: 2px solid #ee3124;
+    border-radius: 10px; }
+
+a:visited {
+  color: #3c3c3c; }
+
+a:link, a:focus, a:hover, a:active {
+  text-decoration: none;
+  color: #a7a7a7;
+  cursor: pointer; }
 
 /* Mobile */
 @media only screen and (min-width: 325px) {
@@ -93,6 +120,14 @@ a:link, a:visited, a:focus, a:hover, a:active {
     margin-bottom: 50px; }
   .content {
     margin-bottom: 25px; }
+  .order {
+    align-items: center; }
+    .order span {
+      padding-bottom: 10px;
+      font-size: 23px; }
+  .order-btn {
+    margin: auto;
+    font-size: 20px; }
   .footer {
     margin-top: 25px;
     text-align: center;
@@ -109,6 +144,13 @@ a:link, a:visited, a:focus, a:hover, a:active {
     font-size: 32px; }
   .content {
     margin-right: 50px; }
+  .order {
+    align-items: flex-start; }
+    .order span {
+      padding-bottom: 0; }
+  .order-btn {
+    margin: 20px;
+    margin-left: 0; }
   .footer {
     display: flex;
     flex-direction: row;
