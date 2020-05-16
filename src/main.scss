@@ -1,6 +1,7 @@
 $bg: #fff;
 $font-primary: rgb(60, 60, 60);
 $font-secondary: rgb(167, 167, 167);
+$joejnr-red: #ee3124;
 
 .App {
   position: absolute;
@@ -108,13 +109,35 @@ $font-secondary: rgb(167, 167, 167);
   }
 }
 
-a {
+.order-btn {
+  margin: 20px;
+  margin-left: 0;
+  padding: 15px;
+  border: 2px solid $font-primary;
+  text-align: center;
+  width: 150px;
   &:link,
-  &:visited,
+  &:focus,
+  // &:visited,
+  &:hover,
+  &:active {
+    color: $joejnr-red;
+    border: 2px solid $joejnr-red;
+    border-radius: 10px;
+  }
+}
+
+a {
+  &:visited{
+    color: $font-primary;
+  }
+  &:link,
   &:focus,
   &:hover,
   &:active {
-    color: $font-secondary
+    text-decoration: none;
+    color: $font-secondary;
+    cursor: pointer;
   }
 }
 
@@ -136,6 +159,11 @@ a {
 
   .content {
     margin-bottom: 25px;
+  }
+
+  .order-btn {
+    margin: auto;
+    font-size: 20px;
   }
 
   .footer {
@@ -165,6 +193,11 @@ a {
 
   .content {
     margin-right: 50px;
+  }
+
+  .order-btn {
+    margin: 20px;
+    margin-left: 0;
   }
 
   .footer {
